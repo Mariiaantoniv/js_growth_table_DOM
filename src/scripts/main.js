@@ -28,7 +28,7 @@ appendRow.addEventListener('click', () => {
 
 removeRow.addEventListener('click', () => {
   if (table.rows.length > min) {
-    table.deleteRow(0);
+    table.deleteRow(table.rows.length - 1);
 
     if (table.rows.length === min) {
       removeRow.disabled = true;
